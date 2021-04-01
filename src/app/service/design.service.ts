@@ -10,7 +10,7 @@ export class DesignService {
     
   }
 omdb(title:any){
-  return this.http.get(`http://www.omdbapi.com/?t=${title}&apikey=e3b80746`)
+  return this.http.get(`https://www.omdbapi.com/?t=${title}&apikey=e3b80746`)
 }
 
 
