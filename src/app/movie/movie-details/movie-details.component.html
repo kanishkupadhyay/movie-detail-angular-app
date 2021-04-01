@@ -1,0 +1,46 @@
+<!----------------------- Search section----------------------- -->
+<div class="bg-div">
+    <form class="inp-div" (submit)="onClick(uname,$event,myForm)" #myForm="ngForm">
+        <input  name="value"  ngModel required #uname type="text" placeholder="Enter Movie or Serial Name">
+       <button [disabled]="!myForm.valid" (mouseenter)="btnOver()" (mouseleave)="btnLeave()" [style.background]='btnStyle'><i  [style.color]="iconStyle" class="fa fa-search" style="font-size:36px"></i></button>
+</form>
+<!-- ---------------------------------------------------------- -->
+
+<!----------------------------- Spinner ------------------------------>
+<div *ngIf="spinner" class="spin">
+  <mat-spinner></mat-spinner>
+</div>
+<!-- -------------------------------------------------------------- -->
+
+
+<!------------------------------- Card-------------------------- ------>
+<h1 *ngIf="notFound" style="text-align: center;color: #fff;">Movie/Program Not Found</h1>
+<div class="cards">
+  <div [style.display]="cardDisplay?'block':'none'" >
+    <a routerLink="/exact-movie/:{{shows.Title}}">
+<mat-card class="example-card con" [style.display]="displayCard?'block':'none'"  class="card" style="width: 18rem;" >
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{shows.Title}}</mat-card-title>
+    <mat-card-subtitle>{{shows.Year}}</mat-card-subtitle>
+  </mat-card-header>
+  <img class="card-img-top" src="{{shows.Poster}}" alt="movie not found">
+  <mat-card-content>
+    <p>
+      {{shows.Plot}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions style="display: flex; justify-content: center;">
+    <button style="color: #fff;" mat-button>Know More</button>
+  </mat-card-actions>
+</mat-card>
+</a>
+</div>
+</div>
+</div>
+<!-- ----------------------------------------------------------- -->
+
+
+
+
+

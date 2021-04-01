@@ -1,0 +1,16 @@
+<p>
+  <mat-toolbar>
+    <span>KanishkUpadhyay</span>
+    <div class="link-div">
+      <a routerLinkActive routerLink="/">Home</a>
+      <a routerLink="search-movies">Movies</a>
+      <mat-icon [matMenuTriggerFor]="menu"> format_list_bulleted</mat-icon>
+      <mat-menu #menu="matMenu">
+        <div class="menu-link">
+          <a routerLink="/">Home</a>
+          <a routerLink="search-movies">Movies</a>
+        </div>
+      </mat-menu>
+    </div>
+  </mat-toolbar>
+</p>

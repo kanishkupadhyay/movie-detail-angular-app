@@ -1,0 +1,31 @@
+.main-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.container{
+    border: 2px solid #00000021;
+    margin-bottom: 100px;
+    box-shadow: 2px 8px 26px #00000026;
+    border-radius: 12px;
+}
+.title{
+    margin-bottom: 30px;
+}
+
+.mat-list-base .mat-list-item, .mat-list-base .mat-list-option{
+    height: 73px;
+}
+.plot{
+    height: 150px !important;
+}
+@media(max-width:440px){
+    .plot{
+        height: 200px !important;
+    }
+    .mat-list-base .mat-list-item, .mat-list-base .mat-list-option{
+        height: 148px !important;
+    }
+}

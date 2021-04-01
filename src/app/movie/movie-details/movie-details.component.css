@@ -1,0 +1,79 @@
+.bg-div{
+    background: url('https://preview.colorlib.com/theme/citylisting/assets/img/gallery/section_bg02.jpg');
+    background-size: cover;
+    height: 115vh;
+    width: 100%;
+}
+input{
+    height: 49px;
+    color: #777777;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 9px 33px 9px 32px;
+    border: none;
+    outline: none;
+    border-radius: 0px;
+    position: relative;
+    width: 50%;
+}
+.inp-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 12rem;
+}
+button{
+    background: #ff3d1c !important;
+    padding: 5px 25px;
+    border: 1px solid #ff3d1c;
+}
+.card{
+    cursor: pointer;
+}
+i{
+    color: #fff;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    
+}
+@media(max-width:740px){
+    input{
+        width: 60%;
+    }
+}
+@media(max-width:450px){
+    input{
+        padding: 9px 33px 9px 10px;
+    }
+}
+.card-img-top{
+    height: 30vh;
+    width: 100%;
+}
+.con{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   margin-bottom: 300px;
+}
+.spin{
+    display: flex;
+    justify-content: center;
+}
+.spinner-border{
+    width: 5rem;
+    height: 5rem;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+@media(max-width:432px){
+    input{
+        width: 70%;
+    }
+}

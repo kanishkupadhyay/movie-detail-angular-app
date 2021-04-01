@@ -1,0 +1,36 @@
+<div class="main-div">
+    <div>
+        <h1 class="title">{{data.Response=='False'?'Movie Not Found':data.Title}}</h1>
+    </div>
+    <div>
+        <img src="{{data.Poster}}" alt="Error loading image" srcset="">
+    </div>
+</div>
+
+<div class="container">
+    <mat-list>
+        <mat-list-item><strong>Actors: </strong> {{data.Actors}}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item><strong>Awards: </strong> {{data.Awards=='N/A'?'Not Known':data.Awards}}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item><strong>Country: </strong> {{data.Country=='N/A'?'Not Known':data.Country}}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item><strong>Director: </strong> {{data.Director=='N/A'?'Not Known':data.Director}}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item><strong>Genre: </strong>{{data.Genre=='N/A'?'Not Known':data.Genre}}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item><strong>Language: </strong> {{data.Language=='N/A'?'Not Known':data.Language}}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item class="plot"><strong>Story: </strong> {{data.Plot=='N/A'?'Not Known':data.Plot}}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item><strong>Ratings: </strong> {{data.Ratings=='N/A'?'Not Known':data.Ratings[0].Value}}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item><strong>Runtime: </strong>{{data.Runtime=='N/A'?'Not Known':data.Runtime}}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item><strong>Writer: </strong> {{data.Writer=='N/A'?'Not Known':data.Writer}}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item><strong>Released Year: </strong> {{data.Year=='N/A'?'Not Known':data.Year}}</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item><strong>Total Seasons: </strong> {{data.totalSeasons=='N/A'?'Not Known':data.totalSeasons}}</mat-list-item>
+      </mat-list>
+</div>
